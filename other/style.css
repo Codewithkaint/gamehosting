@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding:0;
+    
+}
+body{
+    background-color: black;
+
+}
+header{
+    border: 8px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #e8c9a2;
+    margin: 10px 10px;
+   font-size: 35px;
+   height: 5rem;
+   font-weight: bold;
+   text-decoration: underline;
+}
+.game{height: 75vh;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    
+}
+.cont{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3,7vw);
+    grid-template-rows: repeat(3,7vw);
+}
+
+.box{
+    border: 2px solid black;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+.box:hover{
+    background-color: #d6d3d4;;
+}
+.ginfo{ margin: 10px 40px;
+    padding: 0px 20px;
+}
+
+.bl{
+    border-left: 0;
+}
+.br{
+    border-right: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+.imgs img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+#btn{
+    border: 3px solid rgb(15, 19, 16);
+    color: rgb(40, 32, 32);
+    background-color: rgb(228, 168, 242);
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 10px;
+    width: 20%;
+    text-align: center;
+ 
+}
+#btn:hover{
+    color: rgb(44, 43, 43);
+    text-decoration: underline;
+    background-color: aqua;
+    font-size: 1.2rem;
+
+}
+
+.info{margin:5% 15%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: #d2b6ec;;
+    border: 3px solid black;
+    width:20vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont1{width: 100%;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;}
+@media only screen and (max-width:900px) {
+  .game{
+      flex-wrap: wrap;
+
+  }
+  .info{margin: 5% 9%;
+      font-size:1.5rem;
+      width: 45vw;
+      height: 10vh;
+  }
+
+  .ginfo{
+      padding: 5px;
+      margin: 2px;
+  }
+  #btn{font-size: 1.2rem;
+    margin: 5% 0 ;
+    width: 40%;
+
+  }
+  h1{
+      font-size: 150%;
+  }
+  .cont{
+    display: grid;
+    grid-template-columns: repeat(3,15vw);
+    grid-template-rows: repeat(3,15vw);
+}
+.box{font-size: 1.8rem;
+font-weight: bold;}
+}
