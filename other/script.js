@@ -27,7 +27,7 @@ wins.forEach(e=>{
     if((text[e[0]].innerText === text[e[1]].innerText) && (text[e[2]].innerText === text[e[1]].innerText) && (text[e[0]].innerText !== "") ){
         document.querySelector('.info').innerText = text[e[0]].innerText + " Won"
        isover=true;
-       document.querySelector('.imgs').getElementsByTagName('img')[0].style.width='120px';
+       document.querySelector('.imgs').getElementsByTagName('img')[0].style.width='50px';
     
           
     }
