@@ -1,6 +1,4 @@
-let music=new Audio("/oher/back.mp3");
-let turn=new Audio("/other/notify.mp3");
-let gameover=new Audio("/other/gameover.mp3r");
+
 let tu="X"
 let isover=false;
 
@@ -30,13 +28,13 @@ wins.forEach(e=>{
         document.querySelector('.info').innerText = text[e[0]].innerText + " Won"
        isover=true;
        document.querySelector('.imgs').getElementsByTagName('img')[0].style.width='120px';
-       gameover.play();
+    
           
     }
  
 })
 }
-music.play();
+
 let box=document.getElementsByClassName("box");
 Array.from(box).forEach(element=>{
     let text=element.querySelector('.text');
@@ -44,7 +42,7 @@ Array.from(box).forEach(element=>{
         if(text.innerText===''){
             text.innerText=tu;
             tu=change();
-            turn.play();
+      
             win();
             if (isover==false){
                 document.getElementsByClassName("info")[0].innerText  = "TURN - " + tu;
