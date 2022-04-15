@@ -1,6 +1,6 @@
-let music=new Audio("back.mp3");
-let turn=new Audio("notify.mp3");
-let gameover=new Audio("gameover.mp3");
+let music=new Audio("./back.mp3");
+let turn=new Audio("./notify.mp3");
+let gameover=new Audio("./gameover.mp3");
 let tu="X"
 let isover=false;
 
